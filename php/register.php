@@ -17,7 +17,7 @@ if ($mysqli->connect_error) {
 //get values
 $fullName = $_POST['fullName'];
 $email = $_POST['email'];
-$passwrd = $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
+$passwrd = password_hash($_POST['password'], PASSWORD_DEFAULT);
 
 if (isValidEmail($email)) {
     //check if the email already exist
