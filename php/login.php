@@ -19,7 +19,7 @@ $mysqli = new mysqli($serverName, $userName, $passWord, $dbName);
 
 //get values
 $email = $_POST['email'];
-$passwrd = $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
+$passwrd = password_hash($_POST['password'], PASSWORD_DEFAULT);
 
 
 if(isValidEmail(($email))){
